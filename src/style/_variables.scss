@@ -1,0 +1,26 @@
+$primary: #69C5D3;
+$secondary: #A0A0A0;
+$heading: #222222;
+$warning: #B4D62F;
+$orange: #D3B569;
+$danger: #d92d20;
+$dark: #212121;
+$gray: #BCBCBC;
+$dark-gray: #2F2F2F;
+$light :#F7F8FB;
+$black: #111111;
+$white: #fff;
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'heading':$heading,
+    'danger': $danger,
+    'gray':$gray,
+    'light': $light,
+    'warning':$warning,
+    'dark':$dark,
+    'black':$black,
+    'white':$white,
+    'dark-gray':$dark-gray
+);

@@ -1,0 +1,26 @@
+footer {
+  .container {
+    padding: 64px 0;
+
+    .col-md-6 {
+      padding: 0 17px;
+    }
+
+    h5 {
+      margin-bottom: 32px;
+    }
+  }
+
+  p {
+    color: $gray;
+    font-size: 14px;
+  }
+
+  .bottom-footer {
+    padding: 32px;
+
+    .social-links {
+      gap: 40px
+    }
+  }
+}

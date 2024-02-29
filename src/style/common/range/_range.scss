@@ -1,0 +1,14 @@
+.p-slider {
+    height: 6px !important;
+
+    .p-slider-range {
+        background-color: $primary;
+    }
+
+    .p-slider-handle {
+        width: 1rem;
+        height: 1rem;
+        border: 0;
+        background-color: #EBEBEB;
+    }
+}

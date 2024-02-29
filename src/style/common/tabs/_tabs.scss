@@ -1,0 +1,43 @@
+.p-component {
+    font-family: '__Poppins_6d1a03',
+        '__Poppins_Fallback_6d1a03' !important;
+}
+
+.p-tabmenu {
+    display: flex;
+    justify-content: center;
+
+    .p-tabmenu-nav {
+        gap: 64px;
+        border: none;
+
+        .p-menuitem-link {
+            color: $heading;
+            border: 0;
+            font-weight: 300;
+        }
+
+        .p-highlight {
+            .p-menuitem-link {
+                color: $primary;
+            }
+        }
+    }
+}
+
+@include for-tablet {
+    .p-tabmenu {
+        .p-tabmenu-nav {
+            gap: 8px;
+            text-wrap: nowrap;
+
+            .p-highlight {
+                .p-menuitem-link {
+                    color: $white;
+                    background-color: $primary;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}

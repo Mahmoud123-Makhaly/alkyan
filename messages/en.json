@@ -1,0 +1,18 @@
+{
+  "COMP_Header": {
+    "HOME": "Home",
+    "SHOP": "Shop",
+    "OUR_SERVICES": "Our services",
+    "PORTFOLIO": "Portfolio",
+    "ABOUT": "About",
+    "CONTACT_US": "Contact Us",
+    "SEARCH_PLACEHOLDER":"Search ..."
+  },
+  "COMP_Footer":{
+    "ABOUT_US":"About us",
+    "LATEST_POSTS":"Latest Posts",
+    "CONTACT_US":"Contact Us",
+    "INSTAGRAM":"Instagram",
+    "COPYRIGHTS":"All rights rserved" 
+  }  
+}

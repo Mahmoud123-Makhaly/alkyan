@@ -1,0 +1,32 @@
+.button-maker {
+  // @each $color, $value in $theme-colors {
+  //   @if ((lightness($value)) < 90 and (hue($value)) > 10) {
+  //     .bg-#{$color} {
+  //       @extend .text-white
+  //     }
+  //   }
+  // }
+  font-family: inherit;
+  color: $white;
+  border-radius: 87px;
+  text-wrap: nowrap;
+
+  &:disabled {
+    background-color: #EBEBEB !important;
+    color: #888888;
+    border: 0;
+  }
+
+  &:active,
+  &:hover {
+    background-color: $heading;
+    border-color: $heading;
+    color: $white;
+
+    i {
+      color: initial;
+    }
+  }
+
+  font-size: 16px;
+}

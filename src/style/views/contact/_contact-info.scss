@@ -1,0 +1,20 @@
+.contact-info {
+    background-color: $light;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 2rem;
+
+        .contact-icon {
+            margin-inline-end: 8px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}

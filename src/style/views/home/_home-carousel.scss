@@ -1,0 +1,60 @@
+.home-carousel {
+    position: relative;
+
+    .gradient {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(black, 0.5), $white);
+
+    }
+
+    image {
+        display: none;
+    }
+
+    .carousel-content {
+        position: absolute;
+        width: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $white;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        h1 {
+            font-size: clamp(24px, 6vw, 96px);
+        }
+
+        p {
+            font-size: clamp(14px, 2vw, 32px);
+        }
+    }
+
+
+}
+
+@include for-large-phones {
+    .home-carousel {
+        .carousel-content {
+            h1 {
+                margin-bottom: 0;
+            }
+
+            gap: 16px;
+        }
+    }
+}
+
+@include for-phone {
+    .home-carousel {
+        .carousel-content {
+            gap: 8px;
+        }
+    }
+}
+

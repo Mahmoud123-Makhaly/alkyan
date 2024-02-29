@@ -1,0 +1,79 @@
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: $primary;
+    color: $white;
+    border-radius: 12px;
+    width: 64px;
+    height: 64px;
+    z-index: 1000;
+    padding: 2rem 2rem;
+
+    &:hover {
+        background-color: $heading;
+        border-color: $heading;
+        color: $white !important;
+    }
+
+}
+
+.swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    margin: 0 11px !important;
+}
+
+.swiper-button-next {
+    margin-inline-end: 2rem;
+
+    &::after {
+        content: "\f061" !important;
+        font-family: 'FontAwesome' !important;
+        color: $white !important;
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
+
+.swiper-button-prev {
+    margin-inline-start: 2rem;
+
+    &::after {
+        content: "\f060" !important;
+        font-family: 'FontAwesome' !important;
+        color: $white !important;
+        font-size: 30px;
+        font-weight: 200;
+    }
+}
+
+.swiper-pagination-bullet-active {
+    background: $primary !important;
+}
+
+@include for-phone {
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none !important;
+    }
+}
+
+[dir='rtl'] {
+    .swiper-button-next {
+
+
+        &::after {
+            content: "\f060" !important;
+            font-family: 'FontAwesome' !important;
+        }
+    }
+
+    .swiper-button-prev {
+
+
+        &::after {
+            content: "\f061" !important;
+            font-family: 'FontAwesome' !important;
+        }
+    }
+}

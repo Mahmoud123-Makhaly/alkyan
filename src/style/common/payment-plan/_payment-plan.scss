@@ -1,0 +1,61 @@
+.plans {
+    overflow: visible;
+
+    flex-wrap: nowrap;
+
+    .col {
+        min-width: 240px;
+    }
+}
+
+.payment-plan {
+    background-color: $light;
+
+    .plan-title,
+    .plan-price,
+    .plan-desc {
+        padding: 2rem 2rem;
+        text-align: center;
+        border-bottom: 1px solid rgba($color: $secondary, $alpha: 0.4);
+    }
+
+    .plan-price {
+
+        h2,
+        p {
+            font-weight: 300;
+        }
+
+        .currency {
+            font-size: 12px;
+            vertical-align: top;
+        }
+    }
+
+    .plan-title {
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+
+    .plan-btn {
+        padding: 2rem 2rem;
+        text-align: center;
+    }
+}
+
+.standard-plan {
+    margin: 1rem;
+    transform: scale(1.14);
+
+    .plan-title {
+        background-color: $warning;
+        color: $white;
+    }
+}
+
+@include for-desktop {
+    .plans {
+        overflow-x: auto;
+    }
+}
